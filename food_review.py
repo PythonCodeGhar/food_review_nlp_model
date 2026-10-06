@@ -3,11 +3,7 @@ import joblib
 
 # Load model
 
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, "final_rev_data.pkl")
-
-model = joblib.load(model_path)
+model = joblib.load("final_rev_data.pkl"))
 
 
 # Page
