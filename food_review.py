@@ -2,7 +2,13 @@ import streamlit as st
 import joblib
 
 # Load model
-model = joblib.load(r"D:\ai_agentic\ai_conda\final_rev_data.pkl")
+
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "final_rev_data.pkl")
+
+model = joblib.load(model_path)
+
 
 # Page
 st.title("🍽️ Restaurant Review Sentiment Analysis")
