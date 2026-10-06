@@ -3,7 +3,7 @@ import joblib
 
 # Load model
 
-model = joblib.load("final_rev_data.pkl"))
+model = joblib.load("final_rev_data.pkl")
 
 
 # Page
